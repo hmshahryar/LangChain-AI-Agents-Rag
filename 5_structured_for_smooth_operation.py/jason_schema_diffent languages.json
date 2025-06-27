@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Review",
+  "type": "object",
+  "properties": {
+    "key_themes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Write down all the key themes to discuss in reviews"
+    },
+    "summary": {
+      "type": "string",
+      "description": "A brief summary for the reviews"
+    },
+    "sentiments": {
+      "type": "string",
+      "enum": ["pos", "neg"],
+      "description": "Return the sentiment of the review"
+    },
+    "pros": {
+      "type": ["array", "null"],
+      "items": { "type": "string" },
+      "description": "Write down all the pros inside the list"
+    },
+    "cons": {
+      "type": ["array", "null"],
+      "items": { "type": "string" },
+      "description": "Write down all the cons inside the list"
+    },
+    "name": {
+      "type": ["string", "null"],
+      "description": "Write down the name"
+    }
+  },
+  "required": ["key_themes", "summary", "sentiments"]
+}
