@@ -1,2 +1,0 @@
-If you want that the answer of prompt will remain same after each time asked then the temperature is zero 
-if chages to more between 0-2 the  answer will chaneg each time 
